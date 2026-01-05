@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Love ❤</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#ffd6e8;
+  font-family:'Playfair Display',serif;
+  color:#b30059;
+}
+
+.page{
+  display:none;
+  min-height:100vh;
+  padding:40px 20px;
+  text-align:center;
+  animation:fadeIn 1s ease;
+}
+
+.page.active{
+  display:block;
+}
+
+h1{
+  font-size:2.3rem;
+  margin-bottom:20px;
+}
+
+p{
+  font-size:1.15rem;
+  line-height:1.7;
+  margin-bottom:25px;
+}
+
+button{
+  background:#ff8fc7;
+  color:#fff;
+  border:none;
+  padding:12px 28px;
+  font-size:1.1rem;
+  border-radius:30px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  background:#ff5fa9;
+  transform:scale(1.06);
+}
+
+.images{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:22px;
+  margin-top:30px;
+}
+
+.image-card{
+  background:#ffe6f1;
+  padding:15px;
+  border-radius:16px;
+  animation:fadeUp 1s ease;
+}
+
+.image-card img{
+  width:100%;
+  border-radius:14px;
+}
+
+.image-card p{
+  font-size:1rem;
+  margin-top:12px;
+}
+
+@keyframes fadeIn{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(20px);}
+  to{opacity:1;transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<div class="page active" id="page1">
+  <h1>Hello! Mi Amor 💕</h1>
+  <p>Click for the surprise ❤</p>
+  <button onclick="go(2)">Click Me</button>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page" id="page2">
+  <p>
+    Okay bub you may be wondering what this is..<br><br>
+    So basically it's a small surprise for you made with all my love and efforts for you 🤗
+  </p>
+  <button onclick="go(3)">Next</button>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page" id="page3">
+  <h1>FOR MY ADORABLE BOYFRIEND! 💖</h1>
+
+  <div class="images">
+
+    <div class="image-card">
+      <img src="https://i.postimg.cc/m2mfZtT3/IMG-20250928-170024-3.jpg">
+      <p>
+        Oh my God! Just look at this man he's breathtakingly beautiful, simply unreal istg 🫠<br>
+        It's hard to process how handsome you are and it feels just so unreal 🧿<br>
+        You possess a level of handsomeness that feels entirely unreal 🫠🫶<br>
+        I am so lucky to be with such a stunning and charming man.
+      </p>
+    </div>
+
+    <div class="image-card">
+      <img src="https://i.postimg.cc/C5vP0nbZ/IMG-20260104-230956.jpg">
+      <p>
+        Okay lets come to my most fav part of yours.. "YOUR EYES" 😭😭<br>
+        Your eyes are as rich as a freshly brewed cup of coffee, warm and captivating 🤎<br>
+        The richness of your brown iris is truly mesmerizing ✨<br>
+        Oh to be admired by those beautiful and comforting eyes 🛐
+      </p>
+    </div>
+
+    <div class="image-card">
+      <img src="https://i.postimg.cc/gJt8kVBc/IMG-20260104-233032.jpg">
+      <p>
+        The way you carry yourself uff ✨🤌<br>
+        You so freaking handsome mannn 😭<br>
+        My man's not only handsome, he strong too 😙<br>
+        My hawt handsome hunnie only 🤭
+      </p>
+    </div>
+
+    <div class="image-card">
+      <img src="https://i.postimg.cc/bdcGs30c/IMG-20260104-233004.jpg">
+      <p>
+        The way you ride your TB 🤭👉👈<br>
+        Sitting behind you and enjoying every ride is my favorite 😌<br>
+        Creating unforgettable memories with you everywhere ❤
+      </p>
+    </div>
+
+    <div class="image-card">
+      <img src="https://i.postimg.cc/W30zxMLS/IMG-20250719-WA0038.jpg">
+      <p>
+        I JUST LOVE YOU SO MUCH BUB 🫶❤<br>
+        You are the bestest gift God gave me in 2025 😭<br>
+        All I want is you by my side always 🧿<br>
+        LOVE YOU ETERNALLY 🫂❤
+      </p>
+    </div>
+
+  </div>
+
+  <br>
+  <button onclick="go(4)">Next</button>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page" id="page4">
+  <h1>I LOVE YOU SO MUCH HUNNIE ❤</h1>
+  <p>Keep shining like you always do ⭐✨</p>
+  <p style="font-size:1.4rem;">Mwahhhh 😚</p>
+</div>
+
+<script>
+function go(n){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById('page'+n).classList.add('active');
+}
+</script>
+
+</body>
+</html>
